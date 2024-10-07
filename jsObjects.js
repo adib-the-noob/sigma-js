@@ -28,8 +28,13 @@ const person = {
     lastName: "Doe",
     age: 50,
     fullName : function(){
-        return this.firstName + " " + this.lastName;
+        return (this.firstName + " " + this.lastName);
     }
 }
 
 console.log(person);
+console.log(person.fullName());
+
+
+let jsonVal = JSON.stringify(person);
+console.log(jsonVal);
